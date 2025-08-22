@@ -1,0 +1,53 @@
+ body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    margin: 20px;
+    /* background: linear-gradient(45deg, #e8e4e5ab,#da4d7eab); */
+    background: radial-gradient(circle at top left, rgb(174, 240, 248), rgb(250, 171, 237), pink); 
+    /* background: conic-gradient(from 90deg, rgb(205, 245, 255), rgb(133, 247, 255)); */
+ }
+     h1 {
+    text-align: center;
+    text-transform: uppercase; /*Deixa tudo maiúscula*/
+    letter-spacing: 20px; 
+ }
+
+    a {
+    text-decoration: none; /* Remove o sublihado */
+    transition: all 0.3s ease; /* Animação suave */
+ }
+
+     /*Estado do link antes de clicar*/
+     a:Link {
+        color: deeppink;
+ }  
+     /*Estado do link visitado*/
+    a:visited {
+        color: deeppink;
+}
+    /*Quando o mouse estiver em cima*/
+    a:hover {
+        background-color: rgb(249, 60, 142);
+        color: rgb(159, 33, 255);
+        padding: 5px;
+        border-radius: 30px;
+        
+    }
+
+    /*Estilo da classe link topo*/
+    .link-topo {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #751456;
+        color: rgb(207, 159, 255) !important;
+        padding: 10px;
+        border-radius:50%;
+    }
+
+    .link-topo:hover {
+        background-color:rgb(255, 196, 227);
+        border-radius: 50%;
+        padding: 10px;
+
+    }
