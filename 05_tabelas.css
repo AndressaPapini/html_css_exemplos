@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #bdb8b8;
     padding: 20px;
 }
 
@@ -18,4 +18,50 @@ h2 {
 
 /* === Estilo base para todas as tabelas === */
 
-/* Continuar digitação (Aqui) */
+table {
+    border-collapse: collapse; /*Remove espaços entre as bordas*/
+    width:100%;
+    max-width:600px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(117, 107, 107, 0.1);
+}
+
+.tabela-produtos {
+    border: 2px solid #f064cd;
+}
+.tabela-produtos thead {
+    background-color: #fa57b4;
+    color: azure;
+}
+.tabela-produtos th, 
+.tabela-produtos td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #f064a3;
+}
+.tabela-produtos tbody tr:nth-child(even) {
+    background-color: #adb3b2;
+}
+.tabela-produtos tbody tr:nth-child(odd) {
+    background-color: #e5eae9;
+}
+.tabela-produtos tbody tr:hover {
+    background-color: aliceblue;
+    cursor: pointer;
+}
+.tabela-vendas th {
+    padding: 10px;
+    background-color: #272727;
+    color: #f064a3;
+    font-size: 18px;
+}
+.valor {
+    text-align: right;
+    font-weight: bold;
+    color: antiquewhite;
+}
+.total {
+    background-color: aliceblue;
+    font-weight: bold;
+}

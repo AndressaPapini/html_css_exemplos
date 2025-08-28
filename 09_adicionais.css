@@ -10,14 +10,34 @@ body {
 h1 {
     text-align: center;
     color: #2c3e50;
-    animation: fadeIn 2s ease-in; /* Animação de entrada */
+    animation: rainbow 20s  linear infinite, rotate3d  2s linear infinite; /* Animação de entrada */
 }
 
 /* === KEYFRAMES (ANIMAÇÕES) === */
 
 
-/* Continuar digitação (Aqui)  */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(-50px);}
+    to {opacity: 1; transform: translateY(0px);}
+}
 
+ @keyframes rotate3d {
+    0% {transform: rotateX(0deg) rotateY(0deg);}
+    25% {transform: rotateX(90deg) rotateY(90deg);}
+    50% {transform: rotateX(90deg) rotateY(90deg);}
+    75% {transform: rotateX(90deg) rotateY(90deg);}
+    100% {transform: rotateX(0deg) rotateY(0deg);}
+ }
+
+@keyframes rainbow {
+    0% {color: red}
+    16% {color: orange}
+    33% {color: yellow}
+    50% {color: rgb(124, 43, 255)}
+    66% {color: blue}
+    83% {color: purple}
+    100% {color: red}
+}
 
 /* === ELEMENTOS DE TEXTO === */
 mark {
